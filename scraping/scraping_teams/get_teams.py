@@ -144,6 +144,7 @@ def get_Divisions(url):
 def get_Teams_Data(urls):
     teams_info = []
     division_dict = get_Divisions(urls[0])
+    print(division_dict)
     scraper = cloudscraper.create_scraper()
     for url in urls:
         try:
@@ -222,7 +223,7 @@ def get_Teams_Data(urls):
             team_info["Conference"] = arena_conference_info["Conference"]
             for key in division_dict:
               for division in division_dict[key]:
-                if division in team_info["Team Name"]:
+                if (division in team_info["Team Name"]) or (division in team_info["Team Name"].strip(' ')) or ([x for x in team_info["Team Name"].split() if x in division]):
                   team_info["Division"] = key
 
             teams_info.append(team_info)
