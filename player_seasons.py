@@ -75,8 +75,6 @@ def get_player_data(browser,team,season_list):
     if player_seasons and players:
         final_player_seasons_df = pd.concat(player_seasons, ignore_index=True)
         final_players_df = pd.concat(players, ignore_index=True)
-        final_players_df.drop_duplicates(subset=['Player', 'Birth Date'], inplace=True)
-        final_players_df.reset_index(drop=True, inplace=True)
         return final_player_seasons_df,final_players_df
     else:
         print(f"No data found for {team}")
