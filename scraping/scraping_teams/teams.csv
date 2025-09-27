@@ -1,31 +1,31 @@
-id,location,team_name,seasons_played,win,loss,win_percentage,playoff_appearances,championships,arena,conference,division
-1,"Atlanta,Georgia",Atlanta Hawks,77,2967,3052,.493,49,1,State Farm Arena,Eastern Conference,Southeast
-2,"Boston,Massachusetts",Boston Celtics,80,3695,2501,.596,62,18,TD Garden,Eastern Conference,Atlantic
-3,"Brooklyn,NewYork",Brooklyn Nets,50,1680,2270,.43816802270374370,24,0,Barclays Center,Eastern Conference,Atlantic
-4,"Charlotte,NorthCarolina",Charlotte Bobcats,36,1193,1602,.427,10,0,Spectrum Center,Eastern Conference,Southeast
-5,"Chicago,Illinois",Chicago Bulls,60,2422,2340,.509,36,6,United Center,Eastern Conference,Central
-6,"Cleveland,Ohio",Cleveland Cavaliers,56,2096,2339,.473,25,1,Rocket Arena,Eastern Conference,Central
-7,"Dallas,Texas",Dallas Mavericks,46,1836,1789,.506,25,1,American Airlines Center,Western Conference,Southwest
-8,"Denver,Colorado",Denver Nuggets,50,2004,1947,.51520041947413331,31,1,Ball Arena,Western Conference,Northwest
-9,"Detroit,Michigan",Detroit Pistons,78,2871,3209,.472,43,3,Little Caesars Arena,Eastern Conference,Central
-10,"SanFrancisco,California",Golden State Warriors,80,3017,3168,.488,38,7,Chase Center,Western Conference,Pacific
-11,"Houston,Texas",Houston Rockets,59,2421,2267,.516,35,2,Toyota Center,Western Conference,Southwest
-12,"Indianapolis,Indiana",Indiana Pacers,50,1980,1970,.51319801970427317,29,0,Gainbridge Fieldhouse,Eastern Conference,Central
-13,"LosAngeles,California",Los Angeles Clippers,56,1893,2549,.426,19,0,Intuit Dome,Western Conference,Pacific
-14,"LosAngeles,California",Los Angeles Lakers,78,3600,2486,.592,65,17,Crypto.com Arena,Western Conference,Pacific
-15,"Memphis,Tennessee",Memphis Grizzlies,31,1046,1347,.437,14,0,FedEx Forum,Western Conference,Southwest
-16,"Miami,Florida",Miami Heat,38,1558,1409,.525,26,3,Kaseya Center,Eastern Conference,Southeast
-17,"Milwaukee,Wisconsin",Milwaukee Bucks,58,2437,2170,.529,37,2,Fiserv Forum,Eastern Conference,Central
-18,"Minneapolis,Minnesota",Minnesota Timberwolves,37,1196,1680,.416,13,0,Target Center,Western Conference,Northwest
-19,"NewOrleans,Louisiana",New Orleans Pelicans,24,852,998,.461,9,0,Smoothie King Center,Western Conference,Southwest
-20,"NewYork,NewYork",New York Knicks,80,3025,3162,.489,46,2,Madison Square Garden (IV),Eastern Conference,Southwest
-21,"OklahomaCity,Oklahoma",Oklahoma City Thunder,59,2538,2150,.541,34,2,Paycom Center,Western Conference,Northwest
-22,"Orlando,Florida",Orlando Magic,37,1356,1529,.470,18,0,Kia Center,Eastern Conference,Southeast
-23,"Philadelphia,Pennsylvania",Philadelphia 76ers,77,3125,2898,.519,54,3,Wells Fargo Center,Eastern Conference,Atlantic
-24,"Phoenix,Arizona",Phoenix Suns,58,2465,2142,.535,33,0,Footprint Center,Western Conference,Pacific
-25,"Portland,Oregon",Portland Trail Blazers,56,2328,2116,.524,37,1,Moda Center,Western Conference,Northwest
-26,"Sacramento,California",Sacramento Kings,78,2788,3299,.458,30,1,Golden 1 Center,Western Conference,Pacific
-27,"SanAntonio,Texas",San Antonio Spurs,50,2339,1610,.57923391610378366,39,5,Frost Bank Center,Western Conference,Southwest
-28,"Toronto,Canada",Toronto Raptors,31,1126,1266,.471,13,1,Scotiabank Arena,Eastern Conference,Atlantic
-29,"SaltLakeCity,Utah",Utah Jazz,52,2194,1920,.533,31,0,Delta Center,Western Conference,Northwest
-30,"Washington,DistrictofColumbia",Washington Wizards,65,2290,2879,.443,30,1,Capital One Arena,Eastern Conference,Southeast
+team_code,id,location,team_name,seasons_played,win,loss,win_percentage,playoff_appearances,championships,arena,conference,division
+ATL,1,"Atlanta,Georgia",Atlanta Hawks,77,2967,3052,.493,49,1,State Farm Arena,Eastern Conference,Southeast
+BOS,2,"Boston,Massachusetts",Boston Celtics,80,3695,2501,.596,62,18,TD Garden,Eastern Conference,Atlantic
+NJN,3,"Brooklyn,NewYork",Brooklyn Nets,50,1680,2270,.43816802270374370,24,0,Barclays Center,Eastern Conference,Atlantic
+CHA,4,"Charlotte,NorthCarolina",Charlotte Bobcats,36,1193,1602,.427,10,0,Spectrum Center,Eastern Conference,Southeast
+CHI,5,"Chicago,Illinois",Chicago Bulls,60,2422,2340,.509,36,6,United Center,Eastern Conference,Central
+CLE,6,"Cleveland,Ohio",Cleveland Cavaliers,56,2096,2339,.473,25,1,Rocket Arena,Eastern Conference,Central
+DAL,7,"Dallas,Texas",Dallas Mavericks,46,1836,1789,.506,25,1,American Airlines Center,Western Conference,Southwest
+DEN,8,"Denver,Colorado",Denver Nuggets,50,2004,1947,.51520041947413331,31,1,Ball Arena,Western Conference,Northwest
+DET,9,"Detroit,Michigan",Detroit Pistons,78,2871,3209,.472,43,3,Little Caesars Arena,Eastern Conference,Central
+GSW,10,"SanFrancisco,California",Golden State Warriors,80,3017,3168,.488,38,7,Chase Center,Western Conference,Pacific
+HOU,11,"Houston,Texas",Houston Rockets,59,2421,2267,.516,35,2,Toyota Center,Western Conference,Southwest
+IND,12,"Indianapolis,Indiana",Indiana Pacers,50,1980,1970,.51319801970427317,29,0,Gainbridge Fieldhouse,Eastern Conference,Central
+LAC,13,"LosAngeles,California",Los Angeles Clippers,56,1893,2549,.426,19,0,Intuit Dome,Western Conference,Pacific
+LAL,14,"LosAngeles,California",Los Angeles Lakers,78,3600,2486,.592,65,17,Crypto.com Arena,Western Conference,Pacific
+MEM,15,"Memphis,Tennessee",Memphis Grizzlies,31,1046,1347,.437,14,0,FedEx Forum,Western Conference,Southwest
+MIA,16,"Miami,Florida",Miami Heat,38,1558,1409,.525,26,3,Kaseya Center,Eastern Conference,Southeast
+MIL,17,"Milwaukee,Wisconsin",Milwaukee Bucks,58,2437,2170,.529,37,2,Fiserv Forum,Eastern Conference,Central
+MIN,18,"Minneapolis,Minnesota",Minnesota Timberwolves,37,1196,1680,.416,13,0,Target Center,Western Conference,Northwest
+NOH,19,"NewOrleans,Louisiana",New Orleans Pelicans,24,852,998,.461,9,0,Smoothie King Center,Western Conference,Southwest
+NYK,20,"NewYork,NewYork",New York Knicks,80,3025,3162,.489,46,2,Madison Square Garden (IV),Eastern Conference,Southwest
+OKC,21,"OklahomaCity,Oklahoma",Oklahoma City Thunder,59,2538,2150,.541,34,2,Paycom Center,Western Conference,Northwest
+ORL,22,"Orlando,Florida",Orlando Magic,37,1356,1529,.470,18,0,Kia Center,Eastern Conference,Southeast
+PHI,23,"Philadelphia,Pennsylvania",Philadelphia 76ers,77,3125,2898,.519,54,3,Wells Fargo Center,Eastern Conference,Atlantic
+PHO,24,"Phoenix,Arizona",Phoenix Suns,58,2465,2142,.535,33,0,Footprint Center,Western Conference,Pacific
+POR,25,"Portland,Oregon",Portland Trail Blazers,56,2328,2116,.524,37,1,Moda Center,Western Conference,Northwest
+SAC,26,"Sacramento,California",Sacramento Kings,78,2788,3299,.458,30,1,Golden 1 Center,Western Conference,Pacific
+SAS,27,"SanAntonio,Texas",San Antonio Spurs,50,2339,1610,.57923391610378366,39,5,Frost Bank Center,Western Conference,Southwest
+TOR,28,"Toronto,Canada",Toronto Raptors,31,1126,1266,.471,13,1,Scotiabank Arena,Eastern Conference,Atlantic
+UTA,29,"SaltLakeCity,Utah",Utah Jazz,52,2194,1920,.533,31,0,Delta Center,Western Conference,Northwest
+WAS,30,"Washington,DistrictofColumbia",Washington Wizards,65,2290,2879,.443,30,1,Capital One Arena,Eastern Conference,Southeast
