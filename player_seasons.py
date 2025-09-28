@@ -1,6 +1,13 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 import pandas as pd
+import unicodedata
+
+def correct_name(x):
+    if pd.isna(x):
+        return x
+    s = str(x)
+    return unicodedata.normalize('NFKD', s).encode('ascii', 'ignore').decode('utf-8')
 
 def get_player_data(browser,team,season_list):
     print(team)
@@ -20,6 +27,7 @@ def get_player_data(browser,team,season_list):
             if not cells:
                 continue
             per_game_row_data = [cell.text.strip() for cell in cells]
+            # print(per_game_row_data)
             per_game_row_data.append(team)
             per_game_row_data.append(season_year)
             per_game_data_rows.append(per_game_row_data)
@@ -27,6 +35,7 @@ def get_player_data(browser,team,season_list):
         per_game_headers = per_game_headers + ['Team'] + ['Season']
         per_game_df = pd.DataFrame(per_game_data_rows, columns=per_game_headers)
         per_game_df.drop(columns=['Rk','Pos'], inplace=True)
+        per_game_df['Player'] = per_game_df['Player'].apply(correct_name)
 
         player_data_rows = []
         player_table = browser.find_element(By.CSS_SELECTOR, 'table#roster')
@@ -44,6 +53,7 @@ def get_player_data(browser,team,season_list):
 
         player_df = pd.DataFrame(player_data_rows, columns=player_headers)
         player_df.drop(columns='No.', inplace=True)
+        player_df['Player'] = player_df['Player'].apply(correct_name)
 
         salaries_data_rows = []
         salaries_table = browser.find_element(By.CSS_SELECTOR, 'table#salaries2')
@@ -63,14 +73,12 @@ def get_player_data(browser,team,season_list):
         salaries_df = pd.DataFrame(salaries_data_rows, columns=salaries_headers)
         salaries_df.drop(columns='Rk', inplace=True)
 
-        df = per_game_df.merge(player_df, how='inner', on='Player')
-        df = df.merge(salaries_df, how='left',on='Player')
-        df.drop(columns=['Age','Pos','Ht','Wt','Birth','Birth Date','College','Awards','FG%','3P','3PA','3P%','2P','2PA','2P%'], inplace=True)
-        player_df.drop(columns='Exp', inplace=True)
+        # df = per_game_df.merge(player_df, how='inner', on='Player')
+        per_game_df = per_game_df.merge(salaries_df, how='left',on='Player')
+        # df.drop(columns=['Age','Pos','Ht','Wt','Birth','Birth Date','College','Awards'], inplace=True)
+        # player_df.drop(columns='Exp', inplace=True)
 
-
-
-        player_seasons.append(df)
+        player_seasons.append(per_game_df)
         players.append(player_df)
     if player_seasons and players:
         final_player_seasons_df = pd.concat(player_seasons, ignore_index=True)

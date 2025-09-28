@@ -2,6 +2,8 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from player_seasons import get_player_data
 import pandas as pd
+import unicodedata
+
 
 def get_season_data(browser,team_list):
     player_seasons_data = []
@@ -30,13 +32,20 @@ def get_season_data(browser,team_list):
     final_player_seasons_df = pd.concat(player_seasons_data, ignore_index=True)
     final_player_seasons_df.drop_duplicates(inplace=True)
     final_player_seasons_df.reset_index(drop=True, inplace=True)
-    final_player_seasons_df.to_csv("Player_Seasons.csv", index=False)
+
 
     final_players_df = pd.concat(players_data, ignore_index=True)
     final_players_df.drop_duplicates(subset=['Player', 'Birth Date'], inplace=True)
     final_players_df.reset_index(drop=True, inplace=True)
     final_players_df['id'] = final_players_df.index + 1
-    final_players_df = final_players_df[['id', 'Player', 'Pos', 'Ht', 'Wt', 'Birth Date', 'Birth', 'College']]
+    final_players_df = final_players_df[['id', 'Player', 'Pos', 'Ht', 'Wt', 'Birth Date', 'Birth', 'College','Exp']]
+
+    final_player_seasons_df = final_player_seasons_df.merge(final_players_df, on='Player', how='inner')
+    final_player_seasons_df.drop(columns=['Age', 'Pos', 'Ht', 'Wt', 'Birth', 'Birth Date', 'College', 'Awards','Player'], inplace=True)
+    final_player_seasons_df.insert(0, 'id', final_player_seasons_df.pop('id'))
+    final_players_df.drop(columns='Exp', inplace=True)
+
+    final_player_seasons_df.to_csv("Player_Seasons.csv", index=False)
     final_players_df.to_csv("Players.csv", index=False)
     print("Saved")
 
