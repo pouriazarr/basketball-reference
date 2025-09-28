@@ -1,0 +1,8 @@
+id,season_label,year_start,year_end,League Champion,Most Valuable Player,Rookie of the Year,PPG Leader,RPG Leader,APG Leader,WS Leader
+1,2024-25,2024,2025,Oklahoma City Thunder,Shai Gilgeous-Alexander,Stephon Castle,Shai Gilgeous-Alexander,Domantas Sabonis,Trae Young,Shai Gilgeous-Alexander
+2,2023-24,2023,2024,Boston Celtics,Nikola Jokic,Victor Wembanyama,Luka Doncic,Domantas Sabonis,Tyrese Haliburton,Nikola Jokic
+3,2022-23,2022,2023,Denver Nuggets,Joel Embiid,Paolo Banchero,Joel Embiid,Domantas Sabonis,James Harden,Nikola Jokic
+4,2021-22,2021,2022,Golden State Warriors,Nikola Jokic,Scottie Barnes,Joel Embiid,Rudy Gobert,Chris Paul,Nikola Jokic
+5,2020-21,2020,2021,Milwaukee Bucks,Nikola Jokic,LaMelo Ball,Stephen Curry,Clint Capela,Russell Westbrook,Nikola Jokic
+6,2019-20,2019,2020,Los Angeles Lakers,Giannis Antetokounmpo,Ja Morant,James Harden,Andre Drummond,LeBron James,James Harden
+7,2018-19,2018,2019,Toronto Raptors,Giannis Antetokounmpo,Luka Doncic,James Harden,Andre Drummond,Russell Westbrook,James Harden
