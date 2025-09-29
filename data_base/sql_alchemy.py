@@ -69,6 +69,7 @@ class AwardSeason(Base):
     __tablename__ = 'awards_season'
     season_id = Column(Integer, ForeignKey('seasons.id'), primary_key=True, nullable=False)
     award_id = Column(Integer, ForeignKey('awards.id'), primary_key=True, nullable=False)
+    player_id = Column(Integer, ForeignKey('players.id'), primary_key=True, nullable=False)
     name = Column(String)
     team = Column(String)
     # relations
