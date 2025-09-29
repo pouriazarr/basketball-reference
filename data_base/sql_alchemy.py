@@ -148,6 +148,7 @@ csv_files = [
     ('awards_season.csv', 'awards_season'),
     ('awards.csv', 'awards'),
     ('seasons.csv', 'seasons'),
+    ('updated_mvp_candidates.csv', 'mvp_candidates')
 ]
 
 # loading csv files into database
