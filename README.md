@@ -1,6 +1,6 @@
-# Basketbal Reference Statistical Analysis
+# Basketball Reference Statistical Analysis
 
-Basketbal Reference Statistical Analysis
+Basketball Reference Statistical Analysis
   <p></p>
   Website : http://basketball-reference.com/
   <p></p>
